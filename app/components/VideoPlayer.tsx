@@ -114,7 +114,7 @@ export default function VideoPlayer({
                 alt=""
                 className="h-8 w-8 rounded object-contain"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
+                  (e.currentTarget as HTMLImageElement).style.display = "none";
                 }}
               />
             )}

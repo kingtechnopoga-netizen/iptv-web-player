@@ -312,7 +312,7 @@ export default function Dashboard() {
                           alt=""
                           className="h-full w-full object-contain p-1"
                           onError={(e) => {
-                            const target = e.target as HTMLImageElement;
+                            const target = e.currentTarget as HTMLImageElement;
                             target.style.display = "none";
                             target.nextElementSibling?.classList.remove(
                               "hidden"
